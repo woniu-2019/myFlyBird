@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flyBird.css">
+</head>
+
+<body>
+    <!--游戏主界面-->
+    <div id="gameFace">
+        <!--游戏标题-->
+        <div id="head">
+            <img src="img/bird.png" alt="" />
+        </div>
+        <!--开始菜单-->
+        <div id="startMenu">
+            <img src="img/start.jpg" alt="" id="start" />
+        </div>
+        <!--结束菜单-->
+        <div id="endMenu">
+            <img src="img/message.jpg" alt="" />
+            <!--当前分数-->
+            <span id="currentScore">0</span>
+            <!--最好分数-->
+            <span id="bestScore">0</span>
+        </div>
+        <!--鸟-->
+        <img src="img/bird.png" alt="" id="bird" />
+        <!--分数-->
+        <div id="score">
+            <img src="img/0.jpg" alt="" />
+        </div>
+        <!--管道-->
+        <ul id="pipes">
+            <!-- <li class="pipe">
+                <div class="pipe_top"></div>
+                <div class="pipe_bottom"></div>
+            </li> -->
+        </ul>
+        <!--音乐-->
+        <audio id="bulletMusic" src="music/bullet.mp3"></audio>
+        <audio id="gameMusic" src="music/game_music.mp3"></audio>
+        <audio id="gameOverMusic" src="music/game_over.mp3"></audio>
+    </div>
+</body>
+<script src='js/flyBird.js'></script>
+
+</html>

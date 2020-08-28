@@ -1,0 +1,127 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: top;
+}
+ul, li {
+	list-style-type: none;
+}
+
+/*游戏界面*/  
+#gameFace {
+	width: 343px;
+	height: 480px;
+	margin: 20px auto 0;
+	background: url(../img/bg.jpg) no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+/*标题部分*/
+#head {
+	width: 236px;
+	height: 77px;
+	background: url(../img/head.jpg) no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	margin-left: -118px;
+}
+#head>img {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -13px;
+	/*动画: 关键帧动画*/
+	animation: birdFly 1.5s linear infinite;
+}
+@keyframes birdFly {
+	from{
+		top: 50%;
+	}
+	25% {
+		top: 75%;
+	}
+	50% {
+		top: 50%;
+	}
+	75% {
+		top: 25%;
+	}
+	to{
+		top: 50%;
+	}
+}
+
+/*开始菜单*/
+#startMenu {
+	width: 100%;
+	position: absolute;
+	top: 280px;
+	text-align: center;
+	/*调整层级*/
+	z-index: 1;
+}
+#start {
+	/*修改鼠标形状*/
+	cursor: pointer;
+}
+#endMenu{
+	position:absolute;
+	top:30%;
+	left:10%;
+	display:none;
+	z-index:10;
+}
+#currentScore{
+	font-size:20px;
+	position:absolute;
+	top:30%;
+	right:18%;
+}
+#bestScore{
+	position:absolute;
+	font-size:20px;
+	top:60%;
+	right:18%;
+}
+#bird{
+	position:absolute;
+	top:40%;
+	left:60px;
+	display:none;
+	z-index:1;
+}
+#score{
+	position:absolute;
+	top:0;
+	left:40%;
+	display:none;
+	z-index:1;
+}
+/* 管道 */
+#pipes{
+	position:relative;
+	height:100%;
+}
+.pipe{
+	width:62px;
+	height:423px;
+	position:absolute;
+}
+.pipe_top{
+	width:62px;
+	height:100px;
+	background:url('../img/up_pipe.png') bottom no-repeat,url('../img/up_mod.png') repeat-y;
+	position:absolute;
+	top:0;
+}
+.pipe_bottom{
+	width:62px;
+	height:100px;
+	background:url('../img/down_pipe.png') top no-repeat,url('../img/down_mod.png') repeat-y;
+	position:absolute;
+	bottom:0;
+}
+
